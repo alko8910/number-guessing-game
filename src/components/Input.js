@@ -9,7 +9,7 @@ const Input = () => {
     return (
         <div className='input'>
 
-         <h2>Enter a number</h2>
+         <h2>Enter a number beetwen 1 and 100</h2>
         <CommandsButtons />
         
         </div>
