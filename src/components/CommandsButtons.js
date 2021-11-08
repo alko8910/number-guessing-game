@@ -25,6 +25,9 @@ const CommandsButtons = () => {
     if(answers.includes(input)) {
         return setStatus(<p className='bg-info'>UPS! You alredy entered this number!</p> )
     }
+    if(input % 1 !== 0){
+        return setStatus(<p className='bg-info'>UPS! Number must be integer!!</p> )
+    }
 
     if(input > 100 || input < 1 ) {
         return setStatus(<p className='bg-info'>UPS! You must enter number beetwen 1 and 100</p> )
